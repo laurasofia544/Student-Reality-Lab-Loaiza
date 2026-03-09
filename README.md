@@ -125,6 +125,6 @@ Future improvements could include:
 
 # Deployment
 
-Live site: (add deployed URL)
+Live site: https://student-reality-lab-loaiza1.vercel.app/
 
 Repository: https://github.com/laurasofia544/Student-Reality-Lab-Loaiza
