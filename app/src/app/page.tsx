@@ -17,7 +17,8 @@ type Row = {
   date: string;
   nominal: number;
   real: number;
-  cpi: number;
+  cpi: string;
+  "cpi_clean.cpi": number | string;
 };
 
 function fmtMoney(n: number) {
@@ -30,7 +31,15 @@ function fmtPct(n: number) {
 }
 
 export default function Home() {
-  const rows = data as Row[];
+  const rows = (data as any[])
+    .map((r) => ({
+      date: String(r.date),
+      nominal: Number(r.nominal),
+      real: Number(r.real),
+      cpi: String(r.cpi ?? ""),
+      "cpi_clean.cpi": r["cpi_clean.cpi"],
+    }))
+    .filter((r) => !Number.isNaN(r.nominal) && !Number.isNaN(r.real));
 
   const [mode, setMode] = useState<"nominal" | "real">("nominal");
 
@@ -41,8 +50,8 @@ export default function Home() {
       nominal: r.nominal,
       real: r.real,
     }));
-  }, [rows, mode]);
 
+  }, [rows, mode]);
   const metrics = useMemo(() => {
     const first = rows[0];
     const last = rows[rows.length - 1];
@@ -179,7 +188,7 @@ export default function Home() {
                 <XAxis dataKey="date" interval={24} tick={{ fontSize: 12 }} />
                 <YAxis tickFormatter={(v) => `$${v}`} />
                 <Tooltip
-                  formatter={(value: number) => [fmtMoney(Number(value)), "Wage"]}
+                  formatter={(value: any) => [fmtMoney(Number(value ?? 0)), "Wage"]}
                   labelFormatter={(label) => `Date: ${label}`}
                 />
                 <Line
@@ -235,7 +244,7 @@ export default function Home() {
                 <XAxis dataKey="date" interval={24} tick={{ fontSize: 12 }} />
                 <YAxis domain={["dataMin", "dataMax"]} />
                 <Tooltip
-                  formatter={(value: any) => [Number(value).toFixed(1), "CPI"]}
+                  formatter={(value: any) => [fmtMoney(Number(value ?? 0)), "CPI"]}
                   labelFormatter={(label) => `Date: ${label}`}
                 />
                 <Line
