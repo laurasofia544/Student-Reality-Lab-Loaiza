@@ -51,7 +51,7 @@ Series ID: CPIAUCSL
 Source: U.S. Bureau of Labor Statistics via FRED  
 https://fred.stlouisfed.org/series/CPIAUCSL
 
-Data retrieved: March 2026
+Data retrieved: February 2026
 
 # Data Dictionary
 
@@ -72,6 +72,16 @@ The CPI dataset originally contained missing or inconsistent values when merged 
 - Remove rows with missing CPI values  
 - Calculate inflation-adjusted wages using 2006 as the base year  
 - Export cleaned dataset as `processed.json`
+
+# Draft Chart Screenshot
+![alt text](image-1.png)
+
+This draft chart was created in Excel during the early exploration phase of the project.
+
+**Why this chart answers the question**
+
+- The chart shows how wages change over time, allowing us to observe long-term trends in income growth.
+- By comparing this wage trend with inflation data (CPI), we can determine whether wage increases actually translate into higher purchasing power.
 
 ## What This Dataset Cannot Prove
 This dataset represents national averages and does not account for:
@@ -96,8 +106,8 @@ Line chart showing inflation changes over time.
 Nominal wages have increased steadily since 2006, but when adjusting for inflation, real wage growth is much smaller. This suggests increases in wages do not necessarily translate into greater purchasing power.
 
 # Running the Project
-npm install 
-npm run dev
+- npm install 
+- npm run dev
 
 # Open in Browser
 http://localhost:3000
@@ -117,5 +127,4 @@ Future improvements could include:
 
 Live site: (add deployed URL)
 
-Repository: (add repo URL)
-![alt text](image-1.png)
+Repository: https://github.com/laurasofia544/Student-Reality-Lab-Loaiza
