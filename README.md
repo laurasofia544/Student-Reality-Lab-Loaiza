@@ -1,57 +1,160 @@
-# Student-Reality-Lab-Loaiza - Wages vs Inflation (Nominal vs Real)
+Student Reality Lab — Wages vs Inflation
+Essential Question
 
-## Essential Question
-Have hourly wages kept up with inflation since 2006 in the U.S.?
+Have wages kept up with inflation since 2006?
 
-## Claim (Hypothesis)
-After adjusting for inflation, average hourly earnings have grown more slowly than prices, reducing purchasing power.
+Claim (Hypothesis)
 
-## Audience
-College students deciding how far their paycheck will go (rent, groceries, commuting).
+Although nominal wages have increased since 2006, inflation-adjusted wages have grown much more slowly, meaning purchasing power has not increased at the same rate as wages.
 
-## STAR Draft
-### S — Situation
-- Students feel like “everything is more expensive,” but it’s hard to tell if pay is rising at the same pace.
+Audience
 
-### T — Task
-- Help the viewer compare wage growth vs inflation and understand the “real” (inflation-adjusted) trend.
+This project is intended for students and young adults who want to understand whether higher wages actually translate into greater purchasing power when the cost of living is rising.
 
-### A — Action
-- View 1: Line chart of hourly earnings over time.
-- Interaction: Toggle Nominal vs Real (inflation-adjusted).
-- Annotation: Callout on the largest drop / weakest real-wage point.
+STAR Draft
+Situation
 
-### R — Result
-- Metric: Percent change in nominal vs real wages (start vs end date).
-- Expected: Real wage grows more slowly and may dip during high-inflation periods.
+Many students hear that wages are increasing, but at the same time they experience rising costs for housing, groceries, transportation, and tuition. This creates confusion about whether people are actually better off financially.
 
-## Dataset & Provenance
-- Wages: BLS via FRED (CES0500000003)
-- CPI: BLS via FRED (CPIAUCSL)
+Task
 
-## Data Dictionary
-| column | meaning | units |
-|---|---|---|
-| date | month of observation | YYYY-MM-DD |
-| wage | average hourly earnings | dollars/hour |
-| cpi | CPI index | 1982-84=100 |
-| nominal_wage | same as wage | dollars/hour |
-| real_wage | inflation-adjusted wage (base-year dollars) | dollars/hour |
+The goal of this project is to determine whether wage growth has kept up with inflation since 2006. A viewer should be able to compare nominal wages and inflation-adjusted wages to understand how purchasing power has changed.
 
-## Data Viability Audit
-### Missing values + weird fields
-- Check for missing months and non-numeric entries after import.
+Action
 
-### Cleaning plan
-- Merge wages + CPI by date.
-- Choose a base period (first month) and compute real_wage = nominal_wage * (base_cpi / cpi).
-- Output processed.json for the app.
+I built an interactive data story with two main views.
 
-### What this dataset cannot prove (limits/bias)
-- This is not student-only wages and not region-specific costs.
-- CPI is a general basket and doesn’t match every student’s spending.
+View 1 — Wage Trend
 
-## Draft Chart Screenshot
+A line chart shows wage growth over time with a toggle that allows the viewer to switch between:
+
+Nominal wages (actual wages at the time)
+
+Real wages (inflation-adjusted to 2006 dollars)
+
+The chart includes an annotation highlighting the month with the lowest real wage in the dataset.
+
+Interaction
+
+The viewer can toggle between nominal and real wages to see how inflation affects wage growth.
+
+View 2 — CPI Trend
+
+A second chart shows how the Consumer Price Index (CPI) has changed over time. This helps explain why wages must be adjusted for inflation when analyzing purchasing power.
+
+Result
+
+The data shows that nominal wages increased significantly between 2006 and today. However, after adjusting for inflation, the increase in real wages is much smaller.
+
+This suggests that while wages have risen, purchasing power has not improved at the same pace because the cost of living has also increased.
+
+Dataset & Provenance
+
+Primary data sources:
+
+Average Hourly Earnings
+Series ID: CES0500000003
+Source: U.S. Bureau of Labor Statistics via FRED
+https://fred.stlouisfed.org/series/CES0500000003
+
+Consumer Price Index (CPI)
+Series ID: CPIAUCSL
+Source: U.S. Bureau of Labor Statistics via FRED
+https://fred.stlouisfed.org/series/CPIAUCSL
+
+Data retrieved: March 2026
+
+Data Dictionary
+Column	Meaning	Units
+date	Month and year of observation	Date
+nominal	Average hourly earnings at that time	USD
+cpi_clean.cpi	Consumer Price Index value	CPI index
+real	Inflation-adjusted wage using 2006 as base year	USD (2006 dollars)
+Data Viability Audit
+Missing Values and Weird Fields
+
+The CPI dataset originally contained missing or inconsistent values when merged with wage data. After merging datasets, the CPI values appeared under the field name:
+
+cpi_clean.cpi
+
+while the cpi field contained empty values.
+
+Cleaning Plan
+
+The data pipeline performs the following steps:
+
+Merge wage and CPI datasets by date
+
+Remove rows with missing CPI values
+
+Calculate inflation-adjusted wages using 2006 as the base year
+
+Export the cleaned dataset as processed.json
+
+What This Dataset Cannot Prove
+
+This dataset represents national averages and does not account for:
+
+regional wage differences
+
+local cost of living variations
+
+occupation-specific wage trends
+
+housing or rent costs
+
+Because of this, the analysis shows overall trends but cannot fully represent the financial experience of every individual.
+
+Interaction Design
+
+The application includes a toggle interaction that allows the viewer to switch between nominal wages and inflation-adjusted wages.
+
+This interaction helps answer the essential question by allowing users to directly compare wage growth with and without the effects of inflation.
+
+Views
+
+View 1 — Wage Trend
+Interactive line chart showing wage growth with a toggle between nominal and real wages.
+
+View 2 — CPI Trend
+Line chart showing how inflation changed over time using CPI.
+
+Key Insight
+
+Nominal wages have increased steadily since 2006, but when adjusting for inflation, the growth in real wages is much smaller. This suggests that increases in wages do not necessarily translate into greater purchasing power.
+
+Running the Project
+
+Install dependencies:
+
+npm install
+
+Run the development server:
+
+npm run dev
+
+Open in browser:
+
+http://localhost:3000
+Limits & What I’d Do Next
+
+This project focuses on national averages and does not account for differences across regions or industries.
+
+Future improvements could include:
+
+comparing wages by region
+
+adding housing cost data
+
+incorporating rent trends
+
+allowing time filters or regional comparisons
+
+Deployment
+
+Live site:
+(Add your deployed URL here)
+
+Repository:
+(Add your GitHub repo link here)
 ![alt text](image-1.png)
-- This chart directly compares the wage trend over time.
-- The toggle will show whether the “real” trend looks weaker than the nominal trend.
