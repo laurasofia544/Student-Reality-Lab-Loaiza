@@ -47,11 +47,9 @@ export default function Home() {
     return rows.map((r) => ({
       date: r.date,
       value: mode === "nominal" ? r.nominal : r.real,
-      nominal: r.nominal,
-      real: r.real,
     }));
-
   }, [rows, mode]);
+
   const metrics = useMemo(() => {
     const first = rows[0];
     const last = rows[rows.length - 1];
@@ -64,13 +62,7 @@ export default function Home() {
       if (r.real < minReal.real) minReal = r;
     }
 
-    return {
-      first,
-      last,
-      nominalChange,
-      realChange,
-      minReal,
-    };
+    return { first, last, nominalChange, realChange, minReal };
   }, [rows]);
 
   const annotationPoint =
@@ -79,219 +71,226 @@ export default function Home() {
       : { date: metrics.minReal.date, value: metrics.minReal.nominal };
 
   return (
-    <main className="min-h-screen bg-slate-100">
-      <section className="border-b bg-white">
-        <div className="mx-auto max-w-6xl px-6 py-12">
-          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-blue-600">
-            Student Reality Lab
-          </p>
+    <main className="min-h-screen bg-[#111417] text-[#f7f4ef]">
+      {/* HERO */}
+      <section className="mx-auto max-w-7xl px-6 py-24">
+        <p className="mb-5 text-sm uppercase tracking-[0.35em] text-[#f7c873]">
+          Student Reality Lab
+        </p>
 
-          <h1 className="mt-3 max-w-4xl text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl">
-            Have Wages Kept Up With Inflation Since 2006?
-          </h1>
+        <h1 className="max-w-5xl text-6xl font-bold leading-[0.95] tracking-tight md:text-7xl">
+          Wages can rise while buying power tells a different story.
+        </h1>
 
-          <p className="mt-4 max-w-3xl text-lg leading-relaxed text-slate-600">
-            This interactive data story compares nominal wages with
-            inflation-adjusted wages to show how purchasing power changes over
-            time. A paycheck may look larger today, but that does not always
-            mean it buys more.
-          </p>
-
-          <div className="mt-6 rounded-2xl border border-blue-100 bg-blue-50 p-4 text-slate-800">
-            <p className="text-sm leading-relaxed">
-              <span className="font-semibold">Key finding:</span> Nominal wages
-              increased by {fmtPct(metrics.nominalChange)}, but real wages only
-              changed by {fmtPct(metrics.realChange)} after adjusting for
-              inflation.
-            </p>
-          </div>
-        </div>
+        <p className="mt-8 max-w-3xl text-xl leading-9 text-white/70">
+          This interactive data story compares nominal wages with
+          inflation-adjusted wages to show why a larger paycheck does not always
+          mean stronger purchasing power.
+        </p>
       </section>
 
-      <section className="mx-auto max-w-6xl px-6 py-10">
-        <div className="grid gap-4 md:grid-cols-3">
-          <div className="rounded-2xl bg-white p-6 shadow-sm ring-1 ring-slate-200">
-            <p className="text-sm font-medium text-slate-500">Nominal wage change</p>
-            <p className="mt-3 text-3xl font-bold text-slate-900">
-              {fmtPct(metrics.nominalChange)}
-            </p>
-            <p className="mt-2 text-sm text-slate-600">
-              {fmtMoney(metrics.first.nominal)} → {fmtMoney(metrics.last.nominal)}
-            </p>
-          </div>
+      {/* STICKY SCROLLYTELLING */}
+      <section className="mx-auto grid max-w-7xl gap-12 px-6 pb-24 lg:grid-cols-[1fr_0.95fr]">
+        {/* LEFT STICKY VISUAL */}
+        <div className="lg:sticky lg:top-24 h-fit">
+          <div className="rounded-[2rem] border border-[#f7c873]/30 bg-[#1c2229] p-8 shadow-2xl">
+            <h2 className="mb-3 text-3xl font-bold">
+              Wage Growth vs. Buying Power
+            </h2>
 
-          <div className="rounded-2xl bg-white p-6 shadow-sm ring-1 ring-slate-200">
-            <p className="text-sm font-medium text-slate-500">Real wage change (2006$)</p>
-            <p className="mt-3 text-3xl font-bold text-slate-900">
-              {fmtPct(metrics.realChange)}
+            <p className="mb-8 text-lg leading-8 text-white/70">
+              Use the buttons below to compare the wage people received with
+              the inflation-adjusted value of those wages.
             </p>
-            <p className="mt-2 text-sm text-slate-600">
-              {fmtMoney(metrics.first.real)} → {fmtMoney(metrics.last.real)}
-            </p>
-          </div>
 
-          <div className="rounded-2xl bg-white p-6 shadow-sm ring-1 ring-slate-200">
-            <p className="text-sm font-medium text-slate-500">Lowest real wage month</p>
-            <p className="mt-3 text-3xl font-bold text-slate-900">
-              {metrics.minReal.date}
-            </p>
-            <p className="mt-2 text-sm text-slate-600">
-              Real wage: {fmtMoney(metrics.minReal.real)}
+            <div className="mb-8 flex gap-3 rounded-2xl bg-black/30 p-2">
+              <button
+                onClick={() => setMode("nominal")}
+                className={`flex-1 rounded-xl px-4 py-3 text-sm font-semibold transition ${
+                  mode === "nominal"
+                    ? "bg-[#f7c873] text-black"
+                    : "text-white/70 hover:bg-white/10"
+                }`}
+              >
+                Nominal Wages
+              </button>
+
+              <button
+                onClick={() => setMode("real")}
+                className={`flex-1 rounded-xl px-4 py-3 text-sm font-semibold transition ${
+                  mode === "real"
+                    ? "bg-[#f7c873] text-black"
+                    : "text-white/70 hover:bg-white/10"
+                }`}
+              >
+                Real Buying Power
+              </button>
+            </div>
+
+            <div className="h-[420px] w-full">
+              <ResponsiveContainer width="100%" height="100%">
+                <LineChart
+                  data={chartData}
+                  margin={{ top: 10, right: 20, left: 0, bottom: 10 }}
+                >
+                  <CartesianGrid
+                    strokeDasharray="3 3"
+                    stroke="rgba(255,255,255,0.08)"
+                  />
+
+                  <XAxis
+                    dataKey="date"
+                    interval={24}
+                    tick={{ fontSize: 12, fill: "#ffffff90" }}
+                  />
+
+                  <YAxis
+                    tickFormatter={(v) => `$${v}`}
+                    tick={{ fill: "#ffffff90" }}
+                  />
+
+                  <Tooltip
+                    contentStyle={{
+                      backgroundColor: "#111417",
+                      border: "1px solid rgba(255,255,255,0.12)",
+                      borderRadius: "16px",
+                      color: "#fff",
+                    }}
+                    formatter={(value: any) => [
+                      fmtMoney(Number(value ?? 0)),
+                      mode === "nominal" ? "Nominal wage" : "Real wage",
+                    ]}
+                    labelFormatter={(label) => `Date: ${label}`}
+                  />
+
+                  <Line
+                    type="monotone"
+                    dataKey="value"
+                    stroke="#f7c873"
+                    strokeWidth={4}
+                    dot={false}
+                  />
+
+                  <ReferenceDot
+                    x={annotationPoint.date}
+                    y={annotationPoint.value}
+                    r={7}
+                    fill="#ffffff"
+                    stroke="#f7c873"
+                  />
+                </LineChart>
+              </ResponsiveContainer>
+            </div>
+
+            <p className="mt-6 rounded-2xl border border-[#f7c873]/25 bg-[#f7c873]/10 p-4 text-sm leading-7 text-white/75">
+              Takeaway: income may rise, but inflation changes how much that
+              income can actually buy.
             </p>
           </div>
         </div>
 
-        <div className="mt-8 rounded-3xl bg-white p-6 shadow-sm ring-1 ring-slate-200 sm:p-8">
-          <div className="flex flex-col gap-4 border-b border-slate-200 pb-6 sm:flex-row sm:items-end sm:justify-between">
-            <div>
-              <h2 className="text-2xl font-semibold text-slate-900">
-                Wage trend over time
-              </h2>
-              <p className="mt-2 max-w-2xl text-sm leading-relaxed text-slate-600">
-                Use the toggle to compare the wage people actually received at
-                the time with the inflation-adjusted value of those wages in
-                2006 dollars.
-              </p>
-            </div>
+        {/* RIGHT SCROLLING STORY */}
+        <div className="space-y-32 py-6">
+          <article className="rounded-[2rem] border border-white/10 bg-white/[0.06] p-10">
+            <p className="mb-5 text-sm uppercase tracking-[0.35em] text-[#f7c873]">
+              Question
+            </p>
 
-            <div className="flex items-center gap-2 rounded-2xl bg-slate-100 p-1">
-              <button
-                onClick={() => setMode("nominal")}
-                className={`rounded-xl px-4 py-2 text-sm font-semibold transition ${
-                  mode === "nominal"
-                    ? "bg-slate-900 text-white shadow-sm"
-                    : "text-slate-700 hover:bg-slate-200"
-                }`}
-              >
-                Nominal
-              </button>
-              <button
-                onClick={() => setMode("real")}
-                className={`rounded-xl px-4 py-2 text-sm font-semibold transition ${
-                  mode === "real"
-                    ? "bg-slate-900 text-white shadow-sm"
-                    : "text-slate-700 hover:bg-slate-200"
-                }`}
-              >
-                Real (2006$)
-              </button>
-            </div>
-          </div>
+            <h2 className="mb-8 text-5xl font-bold leading-tight">
+              Did wages really improve?
+            </h2>
 
-          <div className="mt-6 h-[420px] w-full">
-            <ResponsiveContainer width="100%" height="100%">
-              <LineChart
-                data={chartData}
-                margin={{ top: 10, right: 20, left: 0, bottom: 10 }}
-              >
-                <CartesianGrid strokeDasharray="3 3" />
-                <XAxis dataKey="date" interval={24} tick={{ fontSize: 12 }} />
-                <YAxis tickFormatter={(v) => `$${v}`} />
-                <Tooltip
-                  formatter={(value: any) => [fmtMoney(Number(value ?? 0)), "Wage"]}
-                  labelFormatter={(label) => `Date: ${label}`}
-                />
-                <Line
-                  type="monotone"
-                  dataKey="value"
-                  stroke="#2563eb"
-                  strokeWidth={3}
-                  dot={false}
-                />
-                <ReferenceDot
-                  x={annotationPoint.date}
-                  y={annotationPoint.value}
-                  r={6}
-                  fill="#f59e0b"
-                  stroke="#b45309"
-                />
-              </LineChart>
-            </ResponsiveContainer>
-          </div>
+            <p className="text-xl leading-9 text-white/70">
+              At first, wage growth can look like progress. If the numbers are
+              going up, it seems like workers are earning more over time.
+            </p>
+          </article>
 
-          <div className="mt-6 rounded-2xl border border-amber-200 bg-amber-50 p-4">
-            <p className="text-sm leading-relaxed text-slate-800">
-              <span className="font-semibold">Annotation:</span> The highlighted
-              point marks the month with the lowest real wage in the dataset,
-              <span className="font-semibold"> {metrics.minReal.date}</span>. In
-              inflation-adjusted terms, wages were{" "}
-              <span className="font-semibold">
+          <article className="rounded-[2rem] border border-white/10 bg-white/[0.06] p-10">
+            <p className="mb-5 text-sm uppercase tracking-[0.35em] text-[#f7c873]">
+              Problem
+            </p>
+
+            <h2 className="mb-8 text-5xl font-bold leading-tight">
+              Inflation changes the story.
+            </h2>
+
+            <p className="text-xl leading-9 text-white/70">
+              Wages do not exist by themselves. Prices also rise, and inflation
+              changes how much those wages can actually buy.
+            </p>
+          </article>
+
+          <article className="rounded-[2rem] border border-white/10 bg-white/[0.06] p-10">
+            <p className="mb-5 text-sm uppercase tracking-[0.35em] text-[#f7c873]">
+              Evidence
+            </p>
+
+            <h2 className="mb-8 text-5xl font-bold leading-tight">
+              Nominal wages can be misleading.
+            </h2>
+
+            <p className="text-xl leading-9 text-white/70">
+              Nominal wages increased by{" "}
+              <span className="font-semibold text-[#f7c873]">
+                {fmtPct(metrics.nominalChange)}
+              </span>
+              , but real wages only changed by{" "}
+              <span className="font-semibold text-[#f7c873]">
+                {fmtPct(metrics.realChange)}
+              </span>{" "}
+              after adjusting for inflation.
+            </p>
+          </article>
+
+          <article className="rounded-[2rem] border border-white/10 bg-white/[0.06] p-10">
+            <p className="mb-5 text-sm uppercase tracking-[0.35em] text-[#f7c873]">
+              Better Measure
+            </p>
+
+            <h2 className="mb-8 text-5xl font-bold leading-tight">
+              Real wages show buying power.
+            </h2>
+
+            <p className="text-xl leading-9 text-white/70">
+              The lowest real wage point in the dataset occurred in{" "}
+              <span className="font-semibold text-[#f7c873]">
+                {metrics.minReal.date}
+              </span>
+              , when inflation-adjusted wages dropped to{" "}
+              <span className="font-semibold text-[#f7c873]">
                 {fmtMoney(metrics.minReal.real)}
               </span>
               .
             </p>
-          </div>
-        </div>
+          </article>
 
-        <div className="mt-8 rounded-3xl bg-white p-6 shadow-sm ring-1 ring-slate-200 sm:p-8">
-          <div>
-            <h2 className="text-2xl font-semibold text-slate-900">
-              CPI trend over time
+          <article className="rounded-[2rem] border border-[#f7c873]/30 bg-[#f7c873]/10 p-10">
+            <p className="mb-5 text-sm uppercase tracking-[0.35em] text-[#f7c873]">
+              Final Takeaway
+            </p>
+
+            <h2 className="mb-8 text-5xl font-bold leading-tight">
+              Higher wages do not automatically mean stronger purchasing power.
             </h2>
-            <p className="mt-2 max-w-2xl text-sm leading-relaxed text-slate-600">
-              This chart shows how the Consumer Price Index changed over time,
-              helping explain why nominal wages need to be adjusted for inflation.
-            </p>
-          </div>
 
-          <div className="mt-6 h-[420px] w-full">
-            <ResponsiveContainer width="100%" height="100%">
-              <LineChart
-                data={rows}
-                margin={{ top: 10, right: 20, left: 0, bottom: 10 }}
-              >
-                <CartesianGrid strokeDasharray="3 3" />
-                <XAxis dataKey="date" interval={24} tick={{ fontSize: 12 }} />
-                <YAxis domain={["dataMin", "dataMax"]} />
-                <Tooltip
-                  formatter={(value: any) => [fmtMoney(Number(value ?? 0)), "CPI"]}
-                  labelFormatter={(label) => `Date: ${label}`}
-                />
-                <Line
-                  type="monotone"
-                  dataKey={(row) => Number(row["cpi_clean.cpi"]) || null}
-                  stroke="#dc2626"
-                  strokeWidth={3}
-                  dot={false}
-                />
-              </LineChart>
-            </ResponsiveContainer>
-          </div>
+            <p className="text-xl leading-9 text-white/75">
+              The data shows that inflation changes how wage growth should be
+              interpreted. A paycheck can grow in dollars while its real value
+              grows much more slowly.
+            </p>
+          </article>
         </div>
-
-        <div className="mt-8 grid gap-6 lg:grid-cols-2">
-          <div className="rounded-2xl bg-white p-6 shadow-sm ring-1 ring-slate-200">
-            <h3 className="text-xl font-semibold text-slate-900">What to notice</h3>
-            <p className="mt-3 text-slate-700 leading-relaxed">
-              Nominal wages rise steadily over time, which can make it seem like
-              workers are clearly earning more. But after adjusting for
-              inflation, the increase is much smaller. That means a bigger
-              paycheck does not automatically translate into stronger purchasing
-              power.
-            </p>
-          </div>
-
-          <div className="rounded-2xl bg-white p-6 shadow-sm ring-1 ring-slate-200">
-            <h3 className="text-xl font-semibold text-slate-900">
-              Why this matters for students
-            </h3>
-            <p className="mt-3 text-slate-700 leading-relaxed">
-              Students often feel rising costs first through rent, groceries,
-              transportation, and tuition-related expenses. If prices grow
-              faster than inflation-adjusted wages, everyday life becomes less
-              affordable even when hourly pay appears to increase.
-            </p>
-          </div>
-        </div>
-
-        <footer className="mt-10 border-t border-slate-200 pt-6">
-          <p className="text-sm leading-relaxed text-slate-500">
-            Data sources: Average Hourly Earnings (CES0500000003) and CPI
-            (CPIAUCSL), downloaded via FRED/BLS. Inflation adjustment uses 2006
-            as the base year.
-          </p>
-        </footer>
       </section>
+
+      {/* FOOTER */}
+      <footer className="mx-auto max-w-7xl border-t border-white/10 px-6 py-10">
+        <p className="text-sm leading-relaxed text-white/40">
+          Data sources: Average Hourly Earnings (CES0500000003) and CPI
+          (CPIAUCSL), downloaded through FRED/BLS. Inflation adjustment uses
+          2006 as the base year.
+        </p>
+      </footer>
     </main>
   );
 }

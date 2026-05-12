@@ -1,0 +1,1675 @@
+[
+  {
+    "date": "3/1/2006",
+    "nominal": 20.04,
+    "cpi": "",
+    "cpi_clean.cpi": 199.7,
+    "real": 20.04
+  },
+  {
+    "date": "4/1/2006",
+    "nominal": 20.17,
+    "cpi": "",
+    "cpi_clean.cpi": 200.7,
+    "real": 20.07
+  },
+  {
+    "date": "5/1/2006",
+    "nominal": 20.13,
+    "cpi": "",
+    "cpi_clean.cpi": 201.3,
+    "real": 19.97
+  },
+  {
+    "date": "6/1/2006",
+    "nominal": 20.22,
+    "cpi": "",
+    "cpi_clean.cpi": 201.8,
+    "real": 20.01
+  },
+  {
+    "date": "7/1/2006",
+    "nominal": 20.29,
+    "cpi": "",
+    "cpi_clean.cpi": 202.9,
+    "real": 19.97
+  },
+  {
+    "date": "8/1/2006",
+    "nominal": 20.32,
+    "cpi": "",
+    "cpi_clean.cpi": 203.8,
+    "real": 19.91
+  },
+  {
+    "date": "9/1/2006",
+    "nominal": 20.4,
+    "cpi": "",
+    "cpi_clean.cpi": 202.8,
+    "real": 20.09
+  },
+  {
+    "date": "10/1/2006",
+    "nominal": 20.42,
+    "cpi": "",
+    "cpi_clean.cpi": 201.9,
+    "real": 20.2
+  },
+  {
+    "date": "11/1/2006",
+    "nominal": 20.49,
+    "cpi": "",
+    "cpi_clean.cpi": 202,
+    "real": 20.26
+  },
+  {
+    "date": "12/1/2006",
+    "nominal": 20.58,
+    "cpi": "",
+    "cpi_clean.cpi": 203.1,
+    "real": 20.24
+  },
+  {
+    "date": "1/1/2007",
+    "nominal": 20.59,
+    "cpi": "",
+    "cpi_clean.cpi": 203.437,
+    "real": 20.21
+  },
+  {
+    "date": "2/1/2007",
+    "nominal": 20.68,
+    "cpi": "",
+    "cpi_clean.cpi": 204.226,
+    "real": 20.22
+  },
+  {
+    "date": "3/1/2007",
+    "nominal": 20.72,
+    "cpi": "",
+    "cpi_clean.cpi": 205.288,
+    "real": 20.16
+  },
+  {
+    "date": "4/1/2007",
+    "nominal": 20.79,
+    "cpi": "",
+    "cpi_clean.cpi": 205.904,
+    "real": 20.16
+  },
+  {
+    "date": "5/1/2007",
+    "nominal": 20.84,
+    "cpi": "",
+    "cpi_clean.cpi": 206.755,
+    "real": 20.13
+  },
+  {
+    "date": "6/1/2007",
+    "nominal": 20.95,
+    "cpi": "",
+    "cpi_clean.cpi": 207.234,
+    "real": 20.19
+  },
+  {
+    "date": "7/1/2007",
+    "nominal": 20.94,
+    "cpi": "",
+    "cpi_clean.cpi": 207.603,
+    "real": 20.14
+  },
+  {
+    "date": "8/1/2007",
+    "nominal": 21,
+    "cpi": "",
+    "cpi_clean.cpi": 207.667,
+    "real": 20.19
+  },
+  {
+    "date": "9/1/2007",
+    "nominal": 21.04,
+    "cpi": "",
+    "cpi_clean.cpi": 208.547,
+    "real": 20.15
+  },
+  {
+    "date": "10/1/2007",
+    "nominal": 21.06,
+    "cpi": "",
+    "cpi_clean.cpi": 209.19,
+    "real": 20.1
+  },
+  {
+    "date": "11/1/2007",
+    "nominal": 21.12,
+    "cpi": "",
+    "cpi_clean.cpi": 210.834,
+    "real": 20
+  },
+  {
+    "date": "12/1/2007",
+    "nominal": 21.16,
+    "cpi": "",
+    "cpi_clean.cpi": 211.445,
+    "real": 19.98
+  },
+  {
+    "date": "1/1/2008",
+    "nominal": 21.19,
+    "cpi": "",
+    "cpi_clean.cpi": 212.174,
+    "real": 19.94
+  },
+  {
+    "date": "2/1/2008",
+    "nominal": 21.27,
+    "cpi": "",
+    "cpi_clean.cpi": 212.687,
+    "real": 19.97
+  },
+  {
+    "date": "3/1/2008",
+    "nominal": 21.36,
+    "cpi": "",
+    "cpi_clean.cpi": 213.448,
+    "real": 19.98
+  },
+  {
+    "date": "4/1/2008",
+    "nominal": 21.38,
+    "cpi": "",
+    "cpi_clean.cpi": 213.942,
+    "real": 19.96
+  },
+  {
+    "date": "5/1/2008",
+    "nominal": 21.47,
+    "cpi": "",
+    "cpi_clean.cpi": 215.208,
+    "real": 19.92
+  },
+  {
+    "date": "6/1/2008",
+    "nominal": 21.52,
+    "cpi": "",
+    "cpi_clean.cpi": 217.463,
+    "real": 19.76
+  },
+  {
+    "date": "7/1/2008",
+    "nominal": 21.6,
+    "cpi": "",
+    "cpi_clean.cpi": 219.016,
+    "real": 19.69
+  },
+  {
+    "date": "8/1/2008",
+    "nominal": 21.7,
+    "cpi": "",
+    "cpi_clean.cpi": 218.69,
+    "real": 19.82
+  },
+  {
+    "date": "9/1/2008",
+    "nominal": 21.73,
+    "cpi": "",
+    "cpi_clean.cpi": 218.877,
+    "real": 19.83
+  },
+  {
+    "date": "10/1/2008",
+    "nominal": 21.76,
+    "cpi": "",
+    "cpi_clean.cpi": 216.995,
+    "real": 20.03
+  },
+  {
+    "date": "11/1/2008",
+    "nominal": 21.86,
+    "cpi": "",
+    "cpi_clean.cpi": 213.153,
+    "real": 20.48
+  },
+  {
+    "date": "12/1/2008",
+    "nominal": 21.95,
+    "cpi": "",
+    "cpi_clean.cpi": 211.398,
+    "real": 20.74
+  },
+  {
+    "date": "1/1/2009",
+    "nominal": 21.96,
+    "cpi": "",
+    "cpi_clean.cpi": 211.933,
+    "real": 20.69
+  },
+  {
+    "date": "2/1/2009",
+    "nominal": 21.98,
+    "cpi": "",
+    "cpi_clean.cpi": 212.705,
+    "real": 20.64
+  },
+  {
+    "date": "3/1/2009",
+    "nominal": 22.05,
+    "cpi": "",
+    "cpi_clean.cpi": 212.495,
+    "real": 20.72
+  },
+  {
+    "date": "4/1/2009",
+    "nominal": 22.1,
+    "cpi": "",
+    "cpi_clean.cpi": 212.709,
+    "real": 20.75
+  },
+  {
+    "date": "5/1/2009",
+    "nominal": 22.12,
+    "cpi": "",
+    "cpi_clean.cpi": 213.022,
+    "real": 20.74
+  },
+  {
+    "date": "6/1/2009",
+    "nominal": 22.14,
+    "cpi": "",
+    "cpi_clean.cpi": 214.79,
+    "real": 20.58
+  },
+  {
+    "date": "7/1/2009",
+    "nominal": 22.18,
+    "cpi": "",
+    "cpi_clean.cpi": 214.726,
+    "real": 20.63
+  },
+  {
+    "date": "8/1/2009",
+    "nominal": 22.23,
+    "cpi": "",
+    "cpi_clean.cpi": 215.445,
+    "real": 20.61
+  },
+  {
+    "date": "9/1/2009",
+    "nominal": 22.27,
+    "cpi": "",
+    "cpi_clean.cpi": 215.861,
+    "real": 20.6
+  },
+  {
+    "date": "10/1/2009",
+    "nominal": 22.31,
+    "cpi": "",
+    "cpi_clean.cpi": 216.509,
+    "real": 20.58
+  },
+  {
+    "date": "11/1/2009",
+    "nominal": 22.34,
+    "cpi": "",
+    "cpi_clean.cpi": 217.234,
+    "real": 20.54
+  },
+  {
+    "date": "12/1/2009",
+    "nominal": 22.37,
+    "cpi": "",
+    "cpi_clean.cpi": 217.347,
+    "real": 20.55
+  },
+  {
+    "date": "1/1/2010",
+    "nominal": 22.4,
+    "cpi": "",
+    "cpi_clean.cpi": 217.488,
+    "real": 20.57
+  },
+  {
+    "date": "2/1/2010",
+    "nominal": 22.46,
+    "cpi": "",
+    "cpi_clean.cpi": 217.281,
+    "real": 20.64
+  },
+  {
+    "date": "3/1/2010",
+    "nominal": 22.46,
+    "cpi": "",
+    "cpi_clean.cpi": 217.353,
+    "real": 20.64
+  },
+  {
+    "date": "4/1/2010",
+    "nominal": 22.49,
+    "cpi": "",
+    "cpi_clean.cpi": 217.403,
+    "real": 20.66
+  },
+  {
+    "date": "5/1/2010",
+    "nominal": 22.51,
+    "cpi": "",
+    "cpi_clean.cpi": 217.29,
+    "real": 20.69
+  },
+  {
+    "date": "6/1/2010",
+    "nominal": 22.53,
+    "cpi": "",
+    "cpi_clean.cpi": 217.199,
+    "real": 20.71
+  },
+  {
+    "date": "7/1/2010",
+    "nominal": 22.59,
+    "cpi": "",
+    "cpi_clean.cpi": 217.605,
+    "real": 20.73
+  },
+  {
+    "date": "8/1/2010",
+    "nominal": 22.62,
+    "cpi": "",
+    "cpi_clean.cpi": 217.923,
+    "real": 20.73
+  },
+  {
+    "date": "9/1/2010",
+    "nominal": 22.67,
+    "cpi": "",
+    "cpi_clean.cpi": 218.275,
+    "real": 20.74
+  },
+  {
+    "date": "10/1/2010",
+    "nominal": 22.73,
+    "cpi": "",
+    "cpi_clean.cpi": 219.035,
+    "real": 20.72
+  },
+  {
+    "date": "11/1/2010",
+    "nominal": 22.73,
+    "cpi": "",
+    "cpi_clean.cpi": 219.59,
+    "real": 20.67
+  },
+  {
+    "date": "12/1/2010",
+    "nominal": 22.76,
+    "cpi": "",
+    "cpi_clean.cpi": 220.472,
+    "real": 20.62
+  },
+  {
+    "date": "1/1/2011",
+    "nominal": 22.87,
+    "cpi": "",
+    "cpi_clean.cpi": 221.187,
+    "real": 20.65
+  },
+  {
+    "date": "2/1/2011",
+    "nominal": 22.87,
+    "cpi": "",
+    "cpi_clean.cpi": 221.898,
+    "real": 20.58
+  },
+  {
+    "date": "3/1/2011",
+    "nominal": 22.87,
+    "cpi": "",
+    "cpi_clean.cpi": 223.046,
+    "real": 20.48
+  },
+  {
+    "date": "4/1/2011",
+    "nominal": 22.91,
+    "cpi": "",
+    "cpi_clean.cpi": 224.093,
+    "real": 20.42
+  },
+  {
+    "date": "5/1/2011",
+    "nominal": 22.97,
+    "cpi": "",
+    "cpi_clean.cpi": 224.806,
+    "real": 20.4
+  },
+  {
+    "date": "6/1/2011",
+    "nominal": 23,
+    "cpi": "",
+    "cpi_clean.cpi": 224.806,
+    "real": 20.43
+  },
+  {
+    "date": "7/1/2011",
+    "nominal": 23.11,
+    "cpi": "",
+    "cpi_clean.cpi": 225.395,
+    "real": 20.48
+  },
+  {
+    "date": "8/1/2011",
+    "nominal": 23.06,
+    "cpi": "",
+    "cpi_clean.cpi": 226.106,
+    "real": 20.37
+  },
+  {
+    "date": "9/1/2011",
+    "nominal": 23.11,
+    "cpi": "",
+    "cpi_clean.cpi": 226.597,
+    "real": 20.37
+  },
+  {
+    "date": "10/1/2011",
+    "nominal": 23.18,
+    "cpi": "",
+    "cpi_clean.cpi": 226.75,
+    "real": 20.41
+  },
+  {
+    "date": "11/1/2011",
+    "nominal": 23.19,
+    "cpi": "",
+    "cpi_clean.cpi": 227.169,
+    "real": 20.39
+  },
+  {
+    "date": "12/1/2011",
+    "nominal": 23.22,
+    "cpi": "",
+    "cpi_clean.cpi": 227.223,
+    "real": 20.41
+  },
+  {
+    "date": "1/1/2012",
+    "nominal": 23.26,
+    "cpi": "",
+    "cpi_clean.cpi": 227.842,
+    "real": 20.39
+  },
+  {
+    "date": "2/1/2012",
+    "nominal": 23.28,
+    "cpi": "",
+    "cpi_clean.cpi": 228.329,
+    "real": 20.36
+  },
+  {
+    "date": "3/1/2012",
+    "nominal": 23.36,
+    "cpi": "",
+    "cpi_clean.cpi": 228.807,
+    "real": 20.39
+  },
+  {
+    "date": "4/1/2012",
+    "nominal": 23.39,
+    "cpi": "",
+    "cpi_clean.cpi": 229.187,
+    "real": 20.38
+  },
+  {
+    "date": "5/1/2012",
+    "nominal": 23.41,
+    "cpi": "",
+    "cpi_clean.cpi": 228.713,
+    "real": 20.44
+  },
+  {
+    "date": "6/1/2012",
+    "nominal": 23.46,
+    "cpi": "",
+    "cpi_clean.cpi": 228.524,
+    "real": 20.5
+  },
+  {
+    "date": "7/1/2012",
+    "nominal": 23.49,
+    "cpi": "",
+    "cpi_clean.cpi": 228.59,
+    "real": 20.52
+  },
+  {
+    "date": "8/1/2012",
+    "nominal": 23.48,
+    "cpi": "",
+    "cpi_clean.cpi": 229.918,
+    "real": 20.39
+  },
+  {
+    "date": "9/1/2012",
+    "nominal": 23.57,
+    "cpi": "",
+    "cpi_clean.cpi": 231.015,
+    "real": 20.37
+  },
+  {
+    "date": "10/1/2012",
+    "nominal": 23.56,
+    "cpi": "",
+    "cpi_clean.cpi": 231.638,
+    "real": 20.31
+  },
+  {
+    "date": "11/1/2012",
+    "nominal": 23.63,
+    "cpi": "",
+    "cpi_clean.cpi": 231.249,
+    "real": 20.41
+  },
+  {
+    "date": "12/1/2012",
+    "nominal": 23.72,
+    "cpi": "",
+    "cpi_clean.cpi": 231.221,
+    "real": 20.49
+  },
+  {
+    "date": "1/1/2013",
+    "nominal": 23.74,
+    "cpi": "",
+    "cpi_clean.cpi": 231.679,
+    "real": 20.46
+  },
+  {
+    "date": "2/1/2013",
+    "nominal": 23.78,
+    "cpi": "",
+    "cpi_clean.cpi": 232.937,
+    "real": 20.39
+  },
+  {
+    "date": "3/1/2013",
+    "nominal": 23.8,
+    "cpi": "",
+    "cpi_clean.cpi": 232.282,
+    "real": 20.46
+  },
+  {
+    "date": "4/1/2013",
+    "nominal": 23.87,
+    "cpi": "",
+    "cpi_clean.cpi": 231.797,
+    "real": 20.56
+  },
+  {
+    "date": "5/1/2013",
+    "nominal": 23.89,
+    "cpi": "",
+    "cpi_clean.cpi": 231.893,
+    "real": 20.57
+  },
+  {
+    "date": "6/1/2013",
+    "nominal": 23.96,
+    "cpi": "",
+    "cpi_clean.cpi": 232.445,
+    "real": 20.58
+  },
+  {
+    "date": "7/1/2013",
+    "nominal": 23.98,
+    "cpi": "",
+    "cpi_clean.cpi": 232.9,
+    "real": 20.56
+  },
+  {
+    "date": "8/1/2013",
+    "nominal": 24.02,
+    "cpi": "",
+    "cpi_clean.cpi": 233.456,
+    "real": 20.55
+  },
+  {
+    "date": "9/1/2013",
+    "nominal": 24.06,
+    "cpi": "",
+    "cpi_clean.cpi": 233.544,
+    "real": 20.57
+  },
+  {
+    "date": "10/1/2013",
+    "nominal": 24.09,
+    "cpi": "",
+    "cpi_clean.cpi": 233.669,
+    "real": 20.59
+  },
+  {
+    "date": "11/1/2013",
+    "nominal": 24.16,
+    "cpi": "",
+    "cpi_clean.cpi": 234.1,
+    "real": 20.61
+  },
+  {
+    "date": "12/1/2013",
+    "nominal": 24.18,
+    "cpi": "",
+    "cpi_clean.cpi": 234.719,
+    "real": 20.57
+  },
+  {
+    "date": "1/1/2014",
+    "nominal": 24.22,
+    "cpi": "",
+    "cpi_clean.cpi": 235.288,
+    "real": 20.56
+  },
+  {
+    "date": "2/1/2014",
+    "nominal": 24.33,
+    "cpi": "",
+    "cpi_clean.cpi": 235.547,
+    "real": 20.63
+  },
+  {
+    "date": "3/1/2014",
+    "nominal": 24.31,
+    "cpi": "",
+    "cpi_clean.cpi": 236.028,
+    "real": 20.57
+  },
+  {
+    "date": "4/1/2014",
+    "nominal": 24.34,
+    "cpi": "",
+    "cpi_clean.cpi": 236.468,
+    "real": 20.56
+  },
+  {
+    "date": "5/1/2014",
+    "nominal": 24.4,
+    "cpi": "",
+    "cpi_clean.cpi": 236.918,
+    "real": 20.57
+  },
+  {
+    "date": "6/1/2014",
+    "nominal": 24.46,
+    "cpi": "",
+    "cpi_clean.cpi": 237.231,
+    "real": 20.59
+  },
+  {
+    "date": "7/1/2014",
+    "nominal": 24.48,
+    "cpi": "",
+    "cpi_clean.cpi": 237.498,
+    "real": 20.58
+  },
+  {
+    "date": "8/1/2014",
+    "nominal": 24.54,
+    "cpi": "",
+    "cpi_clean.cpi": 237.46,
+    "real": 20.64
+  },
+  {
+    "date": "9/1/2014",
+    "nominal": 24.56,
+    "cpi": "",
+    "cpi_clean.cpi": 237.477,
+    "real": 20.65
+  },
+  {
+    "date": "10/1/2014",
+    "nominal": 24.59,
+    "cpi": "",
+    "cpi_clean.cpi": 237.43,
+    "real": 20.68
+  },
+  {
+    "date": "11/1/2014",
+    "nominal": 24.66,
+    "cpi": "",
+    "cpi_clean.cpi": 236.983,
+    "real": 20.78
+  },
+  {
+    "date": "12/1/2014",
+    "nominal": 24.63,
+    "cpi": "",
+    "cpi_clean.cpi": 236.252,
+    "real": 20.82
+  },
+  {
+    "date": "1/1/2015",
+    "nominal": 24.74,
+    "cpi": "",
+    "cpi_clean.cpi": 234.747,
+    "real": 21.05
+  },
+  {
+    "date": "2/1/2015",
+    "nominal": 24.79,
+    "cpi": "",
+    "cpi_clean.cpi": 235.342,
+    "real": 21.04
+  },
+  {
+    "date": "3/1/2015",
+    "nominal": 24.85,
+    "cpi": "",
+    "cpi_clean.cpi": 235.976,
+    "real": 21.03
+  },
+  {
+    "date": "4/1/2015",
+    "nominal": 24.89,
+    "cpi": "",
+    "cpi_clean.cpi": 236.222,
+    "real": 21.04
+  },
+  {
+    "date": "5/1/2015",
+    "nominal": 24.97,
+    "cpi": "",
+    "cpi_clean.cpi": 237.001,
+    "real": 21.04
+  },
+  {
+    "date": "6/1/2015",
+    "nominal": 24.97,
+    "cpi": "",
+    "cpi_clean.cpi": 237.657,
+    "real": 20.98
+  },
+  {
+    "date": "7/1/2015",
+    "nominal": 25.01,
+    "cpi": "",
+    "cpi_clean.cpi": 238.034,
+    "real": 20.98
+  },
+  {
+    "date": "8/1/2015",
+    "nominal": 25.1,
+    "cpi": "",
+    "cpi_clean.cpi": 238.033,
+    "real": 21.06
+  },
+  {
+    "date": "9/1/2015",
+    "nominal": 25.11,
+    "cpi": "",
+    "cpi_clean.cpi": 237.498,
+    "real": 21.11
+  },
+  {
+    "date": "10/1/2015",
+    "nominal": 25.2,
+    "cpi": "",
+    "cpi_clean.cpi": 237.733,
+    "real": 21.17
+  },
+  {
+    "date": "11/1/2015",
+    "nominal": 25.25,
+    "cpi": "",
+    "cpi_clean.cpi": 238.017,
+    "real": 21.19
+  },
+  {
+    "date": "12/1/2015",
+    "nominal": 25.25,
+    "cpi": "",
+    "cpi_clean.cpi": 237.761,
+    "real": 21.21
+  },
+  {
+    "date": "1/1/2016",
+    "nominal": 25.37,
+    "cpi": "",
+    "cpi_clean.cpi": 237.652,
+    "real": 21.32
+  },
+  {
+    "date": "2/1/2016",
+    "nominal": 25.38,
+    "cpi": "",
+    "cpi_clean.cpi": 237.336,
+    "real": 21.36
+  },
+  {
+    "date": "3/1/2016",
+    "nominal": 25.45,
+    "cpi": "",
+    "cpi_clean.cpi": 238.08,
+    "real": 21.35
+  },
+  {
+    "date": "4/1/2016",
+    "nominal": 25.53,
+    "cpi": "",
+    "cpi_clean.cpi": 238.992,
+    "real": 21.33
+  },
+  {
+    "date": "5/1/2016",
+    "nominal": 25.58,
+    "cpi": "",
+    "cpi_clean.cpi": 239.557,
+    "real": 21.32
+  },
+  {
+    "date": "6/1/2016",
+    "nominal": 25.62,
+    "cpi": "",
+    "cpi_clean.cpi": 240.222,
+    "real": 21.3
+  },
+  {
+    "date": "7/1/2016",
+    "nominal": 25.69,
+    "cpi": "",
+    "cpi_clean.cpi": 240.101,
+    "real": 21.37
+  },
+  {
+    "date": "8/1/2016",
+    "nominal": 25.71,
+    "cpi": "",
+    "cpi_clean.cpi": 240.545,
+    "real": 21.34
+  },
+  {
+    "date": "9/1/2016",
+    "nominal": 25.77,
+    "cpi": "",
+    "cpi_clean.cpi": 241.176,
+    "real": 21.34
+  },
+  {
+    "date": "10/1/2016",
+    "nominal": 25.9,
+    "cpi": "",
+    "cpi_clean.cpi": 241.741,
+    "real": 21.4
+  },
+  {
+    "date": "11/1/2016",
+    "nominal": 25.9,
+    "cpi": "",
+    "cpi_clean.cpi": 242.026,
+    "real": 21.37
+  },
+  {
+    "date": "12/1/2016",
+    "nominal": 25.93,
+    "cpi": "",
+    "cpi_clean.cpi": 242.637,
+    "real": 21.34
+  },
+  {
+    "date": "1/1/2017",
+    "nominal": 26,
+    "cpi": "",
+    "cpi_clean.cpi": 243.618,
+    "real": 21.31
+  },
+  {
+    "date": "2/1/2017",
+    "nominal": 26.07,
+    "cpi": "",
+    "cpi_clean.cpi": 244.006,
+    "real": 21.34
+  },
+  {
+    "date": "3/1/2017",
+    "nominal": 26.11,
+    "cpi": "",
+    "cpi_clean.cpi": 243.892,
+    "real": 21.38
+  },
+  {
+    "date": "4/1/2017",
+    "nominal": 26.18,
+    "cpi": "",
+    "cpi_clean.cpi": 244.193,
+    "real": 21.41
+  },
+  {
+    "date": "5/1/2017",
+    "nominal": 26.21,
+    "cpi": "",
+    "cpi_clean.cpi": 244.004,
+    "real": 21.45
+  },
+  {
+    "date": "6/1/2017",
+    "nominal": 26.26,
+    "cpi": "",
+    "cpi_clean.cpi": 244.163,
+    "real": 21.48
+  },
+  {
+    "date": "7/1/2017",
+    "nominal": 26.35,
+    "cpi": "",
+    "cpi_clean.cpi": 244.243,
+    "real": 21.54
+  },
+  {
+    "date": "8/1/2017",
+    "nominal": 26.37,
+    "cpi": "",
+    "cpi_clean.cpi": 245.183,
+    "real": 21.48
+  },
+  {
+    "date": "9/1/2017",
+    "nominal": 26.49,
+    "cpi": "",
+    "cpi_clean.cpi": 246.435,
+    "real": 21.47
+  },
+  {
+    "date": "10/1/2017",
+    "nominal": 26.5,
+    "cpi": "",
+    "cpi_clean.cpi": 246.626,
+    "real": 21.46
+  },
+  {
+    "date": "11/1/2017",
+    "nominal": 26.54,
+    "cpi": "",
+    "cpi_clean.cpi": 247.284,
+    "real": 21.43
+  },
+  {
+    "date": "12/1/2017",
+    "nominal": 26.63,
+    "cpi": "",
+    "cpi_clean.cpi": 247.805,
+    "real": 21.46
+  },
+  {
+    "date": "1/1/2018",
+    "nominal": 26.72,
+    "cpi": "",
+    "cpi_clean.cpi": 248.859,
+    "real": 21.44
+  },
+  {
+    "date": "2/1/2018",
+    "nominal": 26.74,
+    "cpi": "",
+    "cpi_clean.cpi": 249.529,
+    "real": 21.4
+  },
+  {
+    "date": "3/1/2018",
+    "nominal": 26.85,
+    "cpi": "",
+    "cpi_clean.cpi": 249.577,
+    "real": 21.48
+  },
+  {
+    "date": "4/1/2018",
+    "nominal": 26.91,
+    "cpi": "",
+    "cpi_clean.cpi": 250.227,
+    "real": 21.48
+  },
+  {
+    "date": "5/1/2018",
+    "nominal": 26.98,
+    "cpi": "",
+    "cpi_clean.cpi": 250.792,
+    "real": 21.48
+  },
+  {
+    "date": "6/1/2018",
+    "nominal": 27.03,
+    "cpi": "",
+    "cpi_clean.cpi": 251.018,
+    "real": 21.5
+  },
+  {
+    "date": "7/1/2018",
+    "nominal": 27.1,
+    "cpi": "",
+    "cpi_clean.cpi": 251.214,
+    "real": 21.54
+  },
+  {
+    "date": "8/1/2018",
+    "nominal": 27.21,
+    "cpi": "",
+    "cpi_clean.cpi": 251.663,
+    "real": 21.59
+  },
+  {
+    "date": "9/1/2018",
+    "nominal": 27.32,
+    "cpi": "",
+    "cpi_clean.cpi": 252.182,
+    "real": 21.63
+  },
+  {
+    "date": "10/1/2018",
+    "nominal": 27.37,
+    "cpi": "",
+    "cpi_clean.cpi": 252.772,
+    "real": 21.62
+  },
+  {
+    "date": "11/1/2018",
+    "nominal": 27.44,
+    "cpi": "",
+    "cpi_clean.cpi": 252.594,
+    "real": 21.69
+  },
+  {
+    "date": "12/1/2018",
+    "nominal": 27.56,
+    "cpi": "",
+    "cpi_clean.cpi": 252.767,
+    "real": 21.77
+  },
+  {
+    "date": "1/1/2019",
+    "nominal": 27.59,
+    "cpi": "",
+    "cpi_clean.cpi": 252.561,
+    "real": 21.82
+  },
+  {
+    "date": "2/1/2019",
+    "nominal": 27.69,
+    "cpi": "",
+    "cpi_clean.cpi": 253.319,
+    "real": 21.83
+  },
+  {
+    "date": "3/1/2019",
+    "nominal": 27.77,
+    "cpi": "",
+    "cpi_clean.cpi": 254.277,
+    "real": 21.81
+  },
+  {
+    "date": "4/1/2019",
+    "nominal": 27.79,
+    "cpi": "",
+    "cpi_clean.cpi": 255.233,
+    "real": 21.74
+  },
+  {
+    "date": "5/1/2019",
+    "nominal": 27.88,
+    "cpi": "",
+    "cpi_clean.cpi": 255.296,
+    "real": 21.81
+  },
+  {
+    "date": "6/1/2019",
+    "nominal": 27.97,
+    "cpi": "",
+    "cpi_clean.cpi": 255.213,
+    "real": 21.89
+  },
+  {
+    "date": "7/1/2019",
+    "nominal": 28.03,
+    "cpi": "",
+    "cpi_clean.cpi": 255.802,
+    "real": 21.88
+  },
+  {
+    "date": "8/1/2019",
+    "nominal": 28.14,
+    "cpi": "",
+    "cpi_clean.cpi": 256.036,
+    "real": 21.95
+  },
+  {
+    "date": "9/1/2019",
+    "nominal": 28.16,
+    "cpi": "",
+    "cpi_clean.cpi": 256.43,
+    "real": 21.93
+  },
+  {
+    "date": "10/1/2019",
+    "nominal": 28.24,
+    "cpi": "",
+    "cpi_clean.cpi": 257.155,
+    "real": 21.93
+  },
+  {
+    "date": "11/1/2019",
+    "nominal": 28.34,
+    "cpi": "",
+    "cpi_clean.cpi": 257.879,
+    "real": 21.95
+  },
+  {
+    "date": "12/1/2019",
+    "nominal": 28.38,
+    "cpi": "",
+    "cpi_clean.cpi": 258.63,
+    "real": 21.91
+  },
+  {
+    "date": "1/1/2020",
+    "nominal": 28.43,
+    "cpi": "",
+    "cpi_clean.cpi": 259.127,
+    "real": 21.91
+  },
+  {
+    "date": "2/1/2020",
+    "nominal": 28.54,
+    "cpi": "",
+    "cpi_clean.cpi": 259.25,
+    "real": 21.98
+  },
+  {
+    "date": "3/1/2020",
+    "nominal": 28.73,
+    "cpi": "",
+    "cpi_clean.cpi": 258.076,
+    "real": 22.23
+  },
+  {
+    "date": "4/1/2020",
+    "nominal": 30.04,
+    "cpi": "",
+    "cpi_clean.cpi": 256.032,
+    "real": 23.43
+  },
+  {
+    "date": "5/1/2020",
+    "nominal": 29.72,
+    "cpi": "",
+    "cpi_clean.cpi": 255.802,
+    "real": 23.2
+  },
+  {
+    "date": "6/1/2020",
+    "nominal": 29.38,
+    "cpi": "",
+    "cpi_clean.cpi": 257.042,
+    "real": 22.83
+  },
+  {
+    "date": "7/1/2020",
+    "nominal": 29.39,
+    "cpi": "",
+    "cpi_clean.cpi": 258.352,
+    "real": 22.72
+  },
+  {
+    "date": "8/1/2020",
+    "nominal": 29.49,
+    "cpi": "",
+    "cpi_clean.cpi": 259.316,
+    "real": 22.71
+  },
+  {
+    "date": "9/1/2020",
+    "nominal": 29.51,
+    "cpi": "",
+    "cpi_clean.cpi": 259.997,
+    "real": 22.67
+  },
+  {
+    "date": "10/1/2020",
+    "nominal": 29.54,
+    "cpi": "",
+    "cpi_clean.cpi": 260.319,
+    "real": 22.66
+  },
+  {
+    "date": "11/1/2020",
+    "nominal": 29.64,
+    "cpi": "",
+    "cpi_clean.cpi": 260.911,
+    "real": 22.69
+  },
+  {
+    "date": "12/1/2020",
+    "nominal": 29.91,
+    "cpi": "",
+    "cpi_clean.cpi": 262.045,
+    "real": 22.79
+  },
+  {
+    "date": "1/1/2021",
+    "nominal": 29.93,
+    "cpi": "",
+    "cpi_clean.cpi": 262.687,
+    "real": 22.75
+  },
+  {
+    "date": "2/1/2021",
+    "nominal": 30.05,
+    "cpi": "",
+    "cpi_clean.cpi": 263.579,
+    "real": 22.77
+  },
+  {
+    "date": "3/1/2021",
+    "nominal": 30.03,
+    "cpi": "",
+    "cpi_clean.cpi": 264.961,
+    "real": 22.63
+  },
+  {
+    "date": "4/1/2021",
+    "nominal": 30.22,
+    "cpi": "",
+    "cpi_clean.cpi": 266.614,
+    "real": 22.64
+  },
+  {
+    "date": "5/1/2021",
+    "nominal": 30.41,
+    "cpi": "",
+    "cpi_clean.cpi": 268.383,
+    "real": 22.63
+  },
+  {
+    "date": "6/1/2021",
+    "nominal": 30.54,
+    "cpi": "",
+    "cpi_clean.cpi": 270.654,
+    "real": 22.53
+  },
+  {
+    "date": "7/1/2021",
+    "nominal": 30.66,
+    "cpi": "",
+    "cpi_clean.cpi": 271.903,
+    "real": 22.52
+  },
+  {
+    "date": "8/1/2021",
+    "nominal": 30.78,
+    "cpi": "",
+    "cpi_clean.cpi": 272.676,
+    "real": 22.54
+  },
+  {
+    "date": "9/1/2021",
+    "nominal": 30.98,
+    "cpi": "",
+    "cpi_clean.cpi": 273.91,
+    "real": 22.59
+  },
+  {
+    "date": "10/1/2021",
+    "nominal": 31.14,
+    "cpi": "",
+    "cpi_clean.cpi": 276.55,
+    "real": 22.49
+  },
+  {
+    "date": "11/1/2021",
+    "nominal": 31.23,
+    "cpi": "",
+    "cpi_clean.cpi": 278.919,
+    "real": 22.36
+  },
+  {
+    "date": "12/1/2021",
+    "nominal": 31.39,
+    "cpi": "",
+    "cpi_clean.cpi": 280.845,
+    "real": 22.32
+  },
+  {
+    "date": "1/1/2022",
+    "nominal": 31.6,
+    "cpi": "",
+    "cpi_clean.cpi": 282.543,
+    "real": 22.33
+  },
+  {
+    "date": "2/1/2022",
+    "nominal": 31.64,
+    "cpi": "",
+    "cpi_clean.cpi": 284.5,
+    "real": 22.21
+  },
+  {
+    "date": "3/1/2022",
+    "nominal": 31.8,
+    "cpi": "",
+    "cpi_clean.cpi": 287.674,
+    "real": 22.08
+  },
+  {
+    "date": "4/1/2022",
+    "nominal": 31.96,
+    "cpi": "",
+    "cpi_clean.cpi": 288.561,
+    "real": 22.12
+  },
+  {
+    "date": "5/1/2022",
+    "nominal": 32.1,
+    "cpi": "",
+    "cpi_clean.cpi": 291.298,
+    "real": 22.01
+  },
+  {
+    "date": "6/1/2022",
+    "nominal": 32.19,
+    "cpi": "",
+    "cpi_clean.cpi": 294.957,
+    "real": 21.79
+  },
+  {
+    "date": "7/1/2022",
+    "nominal": 32.34,
+    "cpi": "",
+    "cpi_clean.cpi": 294.913,
+    "real": 21.9
+  },
+  {
+    "date": "8/1/2022",
+    "nominal": 32.44,
+    "cpi": "",
+    "cpi_clean.cpi": 295.097,
+    "real": 21.95
+  },
+  {
+    "date": "9/1/2022",
+    "nominal": 32.57,
+    "cpi": "",
+    "cpi_clean.cpi": 296.349,
+    "real": 21.95
+  },
+  {
+    "date": "10/1/2022",
+    "nominal": 32.7,
+    "cpi": "",
+    "cpi_clean.cpi": 298.007,
+    "real": 21.91
+  },
+  {
+    "date": "11/1/2022",
+    "nominal": 32.82,
+    "cpi": "",
+    "cpi_clean.cpi": 298.786,
+    "real": 21.94
+  },
+  {
+    "date": "12/1/2022",
+    "nominal": 32.94,
+    "cpi": "",
+    "cpi_clean.cpi": 298.832,
+    "real": 22.01
+  },
+  {
+    "date": "1/1/2023",
+    "nominal": 33.02,
+    "cpi": "",
+    "cpi_clean.cpi": 300.42,
+    "real": 21.95
+  },
+  {
+    "date": "2/1/2023",
+    "nominal": 33.15,
+    "cpi": "",
+    "cpi_clean.cpi": 301.45,
+    "real": 21.96
+  },
+  {
+    "date": "3/1/2023",
+    "nominal": 33.27,
+    "cpi": "",
+    "cpi_clean.cpi": 301.821,
+    "real": 22.01
+  },
+  {
+    "date": "4/1/2023",
+    "nominal": 33.43,
+    "cpi": "",
+    "cpi_clean.cpi": 302.845,
+    "real": 22.04
+  },
+  {
+    "date": "5/1/2023",
+    "nominal": 33.5,
+    "cpi": "",
+    "cpi_clean.cpi": 303.334,
+    "real": 22.05
+  },
+  {
+    "date": "6/1/2023",
+    "nominal": 33.69,
+    "cpi": "",
+    "cpi_clean.cpi": 304.014,
+    "real": 22.13
+  },
+  {
+    "date": "7/1/2023",
+    "nominal": 33.85,
+    "cpi": "",
+    "cpi_clean.cpi": 304.609,
+    "real": 22.19
+  },
+  {
+    "date": "8/1/2023",
+    "nominal": 33.89,
+    "cpi": "",
+    "cpi_clean.cpi": 306.082,
+    "real": 22.11
+  },
+  {
+    "date": "9/1/2023",
+    "nominal": 34.01,
+    "cpi": "",
+    "cpi_clean.cpi": 307.276,
+    "real": 22.1
+  },
+  {
+    "date": "10/1/2023",
+    "nominal": 34.08,
+    "cpi": "",
+    "cpi_clean.cpi": 307.696,
+    "real": 22.12
+  },
+  {
+    "date": "11/1/2023",
+    "nominal": 34.17,
+    "cpi": "",
+    "cpi_clean.cpi": 308.148,
+    "real": 22.14
+  },
+  {
+    "date": "12/1/2023",
+    "nominal": 34.29,
+    "cpi": "",
+    "cpi_clean.cpi": 308.741,
+    "real": 22.18
+  },
+  {
+    "date": "1/1/2024",
+    "nominal": 34.47,
+    "cpi": "",
+    "cpi_clean.cpi": 309.698,
+    "real": 22.23
+  },
+  {
+    "date": "2/1/2024",
+    "nominal": 34.52,
+    "cpi": "",
+    "cpi_clean.cpi": 310.967,
+    "real": 22.17
+  },
+  {
+    "date": "3/1/2024",
+    "nominal": 34.65,
+    "cpi": "",
+    "cpi_clean.cpi": 312.345,
+    "real": 22.15
+  },
+  {
+    "date": "4/1/2024",
+    "nominal": 34.76,
+    "cpi": "",
+    "cpi_clean.cpi": 313.023,
+    "real": 22.18
+  },
+  {
+    "date": "5/1/2024",
+    "nominal": 34.89,
+    "cpi": "",
+    "cpi_clean.cpi": 313.175,
+    "real": 22.25
+  },
+  {
+    "date": "6/1/2024",
+    "nominal": 35.01,
+    "cpi": "",
+    "cpi_clean.cpi": 313.044,
+    "real": 22.33
+  },
+  {
+    "date": "7/1/2024",
+    "nominal": 35.08,
+    "cpi": "",
+    "cpi_clean.cpi": 313.569,
+    "real": 22.34
+  },
+  {
+    "date": "8/1/2024",
+    "nominal": 35.22,
+    "cpi": "",
+    "cpi_clean.cpi": 314.062,
+    "real": 22.4
+  },
+  {
+    "date": "9/1/2024",
+    "nominal": 35.34,
+    "cpi": "",
+    "cpi_clean.cpi": 314.732,
+    "real": 22.42
+  },
+  {
+    "date": "10/1/2024",
+    "nominal": 35.46,
+    "cpi": "",
+    "cpi_clean.cpi": 315.631,
+    "real": 22.44
+  },
+  {
+    "date": "11/1/2024",
+    "nominal": 35.6,
+    "cpi": "",
+    "cpi_clean.cpi": 316.528,
+    "real": 22.46
+  },
+  {
+    "date": "12/1/2024",
+    "nominal": 35.69,
+    "cpi": "",
+    "cpi_clean.cpi": 317.604,
+    "real": 22.44
+  },
+  {
+    "date": "1/1/2025",
+    "nominal": 35.84,
+    "cpi": "",
+    "cpi_clean.cpi": 318.961,
+    "real": 22.44
+  },
+  {
+    "date": "2/1/2025",
+    "nominal": 35.94,
+    "cpi": "",
+    "cpi_clean.cpi": 319.679,
+    "real": 22.45
+  },
+  {
+    "date": "3/1/2025",
+    "nominal": 36.11,
+    "cpi": "",
+    "cpi_clean.cpi": 319.785,
+    "real": 22.55
+  },
+  {
+    "date": "4/1/2025",
+    "nominal": 36.12,
+    "cpi": "",
+    "cpi_clean.cpi": 320.302,
+    "real": 22.52
+  },
+  {
+    "date": "5/1/2025",
+    "nominal": 36.28,
+    "cpi": "",
+    "cpi_clean.cpi": 320.62,
+    "real": 22.6
+  },
+  {
+    "date": "6/1/2025",
+    "nominal": 36.36,
+    "cpi": "",
+    "cpi_clean.cpi": 321.435,
+    "real": 22.59
+  },
+  {
+    "date": "7/1/2025",
+    "nominal": 36.47,
+    "cpi": "",
+    "cpi_clean.cpi": 322.169,
+    "real": 22.61
+  },
+  {
+    "date": "8/1/2025",
+    "nominal": 36.62,
+    "cpi": "",
+    "cpi_clean.cpi": 323.291,
+    "real": 22.62
+  },
+  {
+    "date": "9/1/2025",
+    "nominal": 36.7,
+    "cpi": "",
+    "cpi_clean.cpi": 324.245,
+    "real": 22.6
+  },
+  {
+    "date": "10/1/2025",
+    "nominal": 36.85,
+    "cpi": "",
+    "cpi_clean.cpi": "",
+    "real": "#DIV/0!"
+  },
+  {
+    "date": "11/1/2025",
+    "nominal": 37,
+    "cpi": "",
+    "cpi_clean.cpi": 325.063,
+    "real": 22.73
+  },
+  {
+    "date": "12/1/2025",
+    "nominal": 37.02,
+    "cpi": "",
+    "cpi_clean.cpi": 326.031,
+    "real": 22.68
+  },
+  {
+    "date": "1/1/2026",
+    "nominal": 37.17,
+    "cpi": "",
+    "cpi_clean.cpi": 326.588,
+    "real": 22.73
+  }
+]
